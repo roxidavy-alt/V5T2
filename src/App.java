@@ -23,7 +23,7 @@ public class App {
 
                 switch (i) {
                     case 1:
-                        System.out.println("Anna koneen typpi:");
+                        System.out.println("Anna koneen tyyppi:");
                         String machineType = sc.nextLine();
                         System.out.println("Anna koneen malli:");
                         String machineModel = sc.nextLine();
@@ -34,12 +34,12 @@ public class App {
                         Worker worker = new Worker(workerName, workerRole);
                         Machine machine = new Machine(machineModel, machineType, worker);
                         factory.addMachine(machine);
-                        System.out.println("Kone lisätty.");
+                        System.out.println("Kone lisätty!");
                         break;
                     case 2:
                         System.out.println("Tehtaasta Metallitehdas löytyy seuraavat koneet:");
                         for (Machine m : factory.getMachines()) {                            
-                            System.out.println(m.getMachineDetailString());
+                            System.out.println(m.getMachineDetail());
                             System.out.println("");}                            
                         break;
                     case 0:
