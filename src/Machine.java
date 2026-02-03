@@ -8,7 +8,7 @@ public class Machine {
         this.type = type;
         this.operator = operator;
     }
-    public String getMachineDetail() {
+    public String getMachineDetails() {
         return "Koneen tiedot: " + type + ", " + model + "\n" +
         "Työntekijän tiedot: " + operator.getWorkerName() + ", " + operator.getWorkerRole();
     }

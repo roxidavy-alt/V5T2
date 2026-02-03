@@ -39,7 +39,7 @@ public class App {
                     case 2:
                         System.out.println("Tehtaasta Metallitehdas löytyy seuraavat koneet:");
                         for (Machine m : factory.getMachines()) {                            
-                            System.out.println(m.getMachineDetail());
+                            System.out.println(m.getMachineDetails());
                             System.out.println("");}                            
                         break;
                     case 0:
